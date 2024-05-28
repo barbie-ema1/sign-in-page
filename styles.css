@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('./images/bg-intro-desktop.png') no-repeat center;
+  background-color: var(--red);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.container-text,
+.container-form {
+  flex: 1;
+}
+
+h1 {
+  color: white;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  color: white;
+  font-size: 1.05rem;
+  opacity: 90%;
+}
+
+h4 {
+  background-color: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.35);
+  margin-bottom: 1.5rem;
+}
+
+h4 span {
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+span{
+  display: inline;
+}
+
+.hide{
+  display: none;
+}
+
+
+.error_ img{
+  width: 3.8%;
+  height: 3.8%;
+  display: inline;
+  
+
+}
+
+
+
+.errormessage{
+
+  font-size: 10px;
+  color: hsl(0, 100%, 74%);
+  text-align: right;
+  margin-left: 18pc;
+  margin-top: -2.1pc;
+  
+ 
+  
+}
+
+
+
+
+
+input {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid var(--grayish-blue);
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+input.error {
+  border: 1px solid var(--red);
+}
+
+input:hover,
+input:focus {
+  outline: 1.5px solid var(--blue);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: var(--green);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.submitbtn:hover{
+  background-color: rgb(186, 223, 186);
+  cursor: pointer;
+}
+
+
+small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--grayish-blue);
+  gap: 0.25rem;
+}
+
+small span {
+  color: var(--red);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:1440px){
+  
+
+  form img{
+    width: 6%;
+    height: 6%;
+    margin-top:-4pc;
+    margin-left: 26pc;
+    display: flex;
+    margin-bottom: 5pc;
+    
+  }
+
+  .error_ img{
+    width: 5%;
+    height: 5%;
+    display: flex;
+    margin-top: -3.5pc;
+    
+  
+  }
+
+
+  
+  
+  .errormessage{
+  
+    font-size: 10px;
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    margin-left: 18pc;
+    margin-top: -4pc;
+    
+   
+    
+  }
+
+  #eye{
+    margin-top: -6.4pc;
+    display: flex;
+  }
+
+}
+
+
+@media  (min-width:738px) and (max-width:1024px)  {
+  .container{
+    width: 100%;
+  
+  }
+  .container-text{
+    width: 40%;
+    margin-left: -2pc;
+  }
+
+  
+  .container-form{
+    width: 60%;
+  }
+
+  form img{
+    height: 6%;
+    width: 6%;
+    display: inline;
+    vertical-align: middle;
+    margin-top:-7.1pc;
+    margin-left: 25pc;
+    align-items: right;
+    
+
+  }
+
+  .container-form h4{
+    width: 120%;
+    margin-left: -1pc;
+  }
+
+  form{
+    width: 120%;
+    margin-left: -1pc;
+  }
+
+  small{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: -4.8pc;
+  }
+  
+  small span {
+    width: 40%;
+    margin-top: -1.6pc;
+    margin-left: 25pc;
+    align-items: center;
+    text-align: right;
+    justify-content: space-around;
+    
+    
+    
+  
+  }
+  
+
+  form img{
+    width: 6%;
+    height: 6%;
+    margin-top:-4pc;
+    margin-left: 28.5pc;
+    display: flex;
+    margin-bottom: 5pc;
+    
+  }
+
+  .error_ img{
+    width: 5%;
+    height: 5%;
+    display: flex;
+    margin-top: -3.5pc;
+    
+  
+  }
+
+
+  
+  .errormessage{
+  
+    font-size: 10px;
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    margin-left: 18pc;
+    margin-top: -4pc;
+    
+   
+    
+  }
+
+  #eye{
+    margin-top: -5.9pc;
+    display: flex;
+  }
+
+
+
+
+}
+
+@media (max-width:768px) and (min-width:554px){
+
+  .container-text {
+    width: 30%;
+    margin-top: 5pc;
+  }
+  
+  .container-text h1{
+    font-size: 35px;
+    
+  }
+
+  .container-text p{
+    font-size: 12px;
+  }
+
+  .container-form{
+    width: 70%;
+    margin-top: -4.2pc;
+    margin-bottom: 2pc;
+  }
+
+  .container-form h4 {
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.35);
+    margin-bottom: 1.5rem;
+    margin-top: 12pc;
+    width: 110%;
+    margin-left: -1pc;
+  }
+
+  form {
+    background-color: white;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    width: 110%;
+    
+  }
+  
+  form input{
+    height: 50px;
+  }
+  
+  form img{
+    
+    width: 5%;
+    height: 5%;
+    display: flex;
+    margin-top:-7.1pc;
+    margin-left: -6pc;
+  
+  
+  }
+
+  #togglePassword{
+    margin-left: 16pc;
+    align-items: center;
+    margin-top: -3.4pc;
+  }
+
+  form button {
+    height: 50px;
+    
+  }
+
+  
+  small{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    margin-left: 0.1pc;
+  }
+  
+  small span {
+    width: 70%;
+    margin-top: -1.6pc;
+    margin-left: -8pc;
+    
+    
+    
+  
+  }
+
+
+
+  .error_ img{
+    width: 5%;
+    height: 5%;
+    display: flex;
+    margin-top: -3.5pc;
+    margin-left: 16pc;
+    
+  
+  }
+
+
+  
+  
+  .errormessage{
+  
+    font-size: 10px;
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    margin-left: 2pc;
+    margin-top: -3.5pc;
+    margin-bottom: 1pc;
+    
+   
+    
+  }
+
+  #eye{
+    margin-top: -6.4pc;
+    display: flex;
+    margin-bottom: 5pc;
+  }
+
+
+
+
+}
+
+
+@media (min-width:375px) and (max-width:554px){
+
+  .container-text h1{
+    margin-top: 10pc;
+  }
+
+
+  
+  
+
+}
+
+
+@media (min-width:320px) and (max-width:554px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    height: 80%;
+    
+  }
+
+  .container-text{
+    width: 100%;
+    margin-top: -5pc;
+  }
+
+  .container-text h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 0.2pc;
+    width: 100%;
+    
+  }
+
+  .container-text p{
+    text-align: center;
+    margin-left: 0.2pc;
+    width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  h4 {
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.35);
+    margin-bottom: 1.5rem;
+    width: 100%;
+    
+  }
+
+
+  .container-form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 0pc;
+    
+    
+  }
+
+    
+small{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+small span {
+  width: 70%;
+  margin-top: -1.5pc;
+  margin-left: 9pc;
+  
+  
+  
+
+}
+  
+form img{
+  display: inline;
+  vertical-align: middle;
+  margin-top:-3.5pc;
+  margin-left: 13pc;
+  height: 20px;
+  width: 20px;
+  
+}
+
+
+
+.error_ img{
+  width: 5.4%;
+  height: 5.4%;
+  display: flex;
+  margin-top: -3.5pc;
+  margin-bottom: -3pc;
+  
+
+}
+
+
+
+
+.errormessage{
+
+  font-size: 10px;
+  color: hsl(0, 100%, 74%);
+  text-align: right;
+  margin-top: 4pc;
+  margin-bottom: 1pc;
+
+  margin-left: 1pc;
+ 
+  
+ 
+  
+}
+
+#eye{
+  margin-top: -6.4pc;
+  display: flex;
+  margin-bottom: -2pc;
+}
+
+
+  
+}
+
+
+
+
+
+
+
+
+  
