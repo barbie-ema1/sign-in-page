@@ -24,6 +24,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 3pc;
 }
 
 .container {
@@ -38,6 +39,7 @@ body {
 .container-form {
   flex: 1;
 }
+
 
 h1 {
   color: white;
@@ -71,6 +73,7 @@ form {
   background-color: white;
   padding: 2rem;
   border-radius: 1rem;
+
 }
 
 span{
@@ -502,6 +505,7 @@ small span {
     margin-left: 0pc;
     
     
+    
   }
 
     
@@ -509,6 +513,7 @@ small{
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 1pc;
  
 }
 
@@ -553,9 +558,9 @@ form img{
   color: hsl(0, 100%, 74%);
   text-align: right;
   margin-top: 4pc;
-  margin-bottom: 1pc;
-
+  font-style: italic;
   margin-left: 1pc;
+
  
   
  
